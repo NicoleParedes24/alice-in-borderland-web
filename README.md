@@ -35,7 +35,7 @@ Incluye páginas dinámicas, navegación interactiva, imágenes y sonidos. 🎲�
 3. Ejecuta el proyecto en el servidor
 4. Abre tu navegador y accede a:
   ```
-   [http://localhost:8080/alice-in-borderland](http://localhost:8080/alice-in-borderland)
+   http://localhost:8080/alice-in-borderland
    ```
 
 
