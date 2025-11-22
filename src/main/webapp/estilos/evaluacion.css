@@ -1,0 +1,59 @@
+/* Texto introductorio */
+#evaluacion p {
+    font-size: 20px;
+    color: #e8d8c0;
+    margin-bottom: 15px; 
+}
+
+/* Labels de preguntas  */
+#evaluacion label {
+    display: block;
+    font-size: 22px;   
+    color: #f4d7a1;
+    margin-bottom: 0px;  
+    line-height: 0.5;    
+}
+
+/* SELECT */
+#evaluacion select {
+    padding: 8px 12px;
+    background: #2b2220;
+    border: 2px solid #f4d7a1;
+    border-radius: 6px;
+    font-size: 18px;  
+    color: #f2e6d5;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 5px; 
+}
+
+#evaluacion select:hover {
+    background: #362b28;
+}
+
+/* BOTON*/
+#evaluacion button {
+    padding: 10px 35px;
+    background: #f4d7a1;
+    color: #2a1d14;
+    border: none;
+    font-size: 20px; 
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+#evaluacion button:hover {
+    background: #ffe1b7;
+    transform: scale(1.05);
+}
+
+/* RESULTADO RPREGUNTAS */
+#resultado {
+    color: #ffdca6;
+    font-size: 30px; 
+    text-shadow: 0 0 10px rgba(255, 210, 150, 0.4);
+    margin-top: 15px;
+}

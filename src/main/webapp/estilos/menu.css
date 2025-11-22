@@ -1,0 +1,14 @@
+nav ul {
+    display: flex;
+    gap: 50px; /* separación uniforme */
+    justify-content: center;
+    align-items: center;
+}
+
+.title-main{
+  color:var(--accent);
+  font-size:32px;
+  font-weight:900;
+   margin-left: 60px; /* mueve a la derecha — ajusta el valor */
+  text-shadow:0 0 8px rgba(214,167,104,.4);
+}

@@ -1,0 +1,356 @@
+
+/*       ESTILO PARA LAS TARJETAS        */
+
+
+:root{
+  --bg:#1b1410;
+  --bg2:#221913;
+  --text:#f3e8d7;
+  --muted:#bba999;
+  --accent:#d6a768; 
+  --soft-shadow:0 4px 15px rgba(0,0,0,.45);
+  --radius:14px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Georgia", serif;
+}
+
+body{
+  background:linear-gradient(180deg,var(--bg),var(--bg2));
+  color:var(--text);
+}
+
+.wrap{
+  max-width:1200px;
+  margin:auto;
+  padding-top:120px;  /* antes 150px — imagen sube */
+}
+
+
+/*           MENÚ         */
+
+
+header{
+  position:fixed;
+  top:0; left:0;
+  width:100%;
+  background:rgba(20,15,12,0.85);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(214,167,104,0.2);
+  z-index:999;
+  padding:20px 0;
+}
+
+.nav{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 30px;
+}
+
+.title-main{
+  color:var(--accent);
+  font-size:32px;
+  font-weight:900;
+  text-shadow:0 0 8px rgba(214,167,104,.4);
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  color:var(--muted);
+  text-decoration:none;
+  font-weight:600;
+  transition:.25s;
+}
+
+nav a:hover{
+  color:var(--accent);
+}
+
+
+/*          HERO          */
+
+
+.hero {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;    
+    justify-content: center;
+    padding: 20px 0 20px 0;  
+    margin-top: 30px;
+}
+
+.hero-img img{
+  width:480px; 
+  height:auto;
+  object-fit:cover;
+  border-radius:12px;
+  box-shadow:var(--soft-shadow);
+}
+
+.hero-text{
+  flex:1;
+  max-width:600px;
+  font-size:18px;  
+  line-height:1.45;
+}
+
+.hero-title{
+  font-size:38px;   /* antes 48px */
+  color:var(--accent);
+  margin-bottom:10px;
+  text-shadow:0 0 12px rgba(214,167,104,.4);
+}
+
+.hero-text p,
+.hero-text li{
+  margin-bottom:10px;
+}
+
+.hero-text ul{
+  margin-left:20px;
+}
+
+/*        SECCIONES       */
+
+
+.section{
+  padding:60px 0;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.section-title{
+  font-size:32px;
+  font-weight:900;
+  color:var(--accent);
+  margin-bottom:30px;
+}
+
+
+
+/*        GALERÍA         */
+
+
+.gallery-image{
+  width:100%;
+  border-radius:var(--radius);
+  box-shadow:var(--soft-shadow);
+}
+
+
+/*        FOOTER          */
+
+
+footer{
+  text-align:center;
+  padding:50px 0;
+  color:var(--muted);
+  font-size:15px;
+}
+
+
+/* SCROLL          */
+
+
+section{
+  scroll-margin-top:140px;
+}
+/* ===== FIX HERO FINAL ===== */
+
+.hero {
+    padding: 20px 0 !important;   /* imagen más arriba */
+}
+
+.hero-flex {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 40px !important;
+}
+
+.hero-img img {
+    width: 480px !important;   
+    height: auto !important;
+    border-radius: 12px;
+    box-shadow: var(--soft-shadow);
+}
+
+.hero-text {
+    max-width: 550px !important; 
+    font-size: 16px !important;  
+}
+
+.hero-title {
+    font-size: 36px !important;   
+    margin-bottom: 15px !important;
+}
+
+/*         TABLA DE JUEGOS       */
+
+
+.tabla-juegos {
+  width: 90%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  font-size: 18px;               
+  background: rgba(0,0,0,0.25);
+  border-radius: 12px;
+  overflow: hidden;
+  color: #f0e4d2;
+}
+
+/* Encabezado */
+.tabla-juegos th {
+  background: rgba(214,167,104,0.25);
+  padding: 14px 10px;             
+  text-align: left;
+  color: #eec78a;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Filas */
+.tabla-juegos td {
+  padding: 12px 10px;             
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Filas alternadas */
+.tabla-juegos tr:nth-child(even) {
+  background: rgba(255,255,255,0.04);
+}
+
+/* Íconos de cartas */
+.tabla-juegos td:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffdd9c;
+}
+
+/* Última fila sin borde extra */
+.tabla-juegos tr:last-child td {
+  border-bottom: none;
+}
+
+/* Hover */
+.tabla-juegos tr:hover {
+  background: rgba(255,255,255,0.08);
+  transition: 0.2s;
+}
+/* === CONTENEDOR PRINCIPAL === */
+.juegos-temporada {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.juegos-temporada h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: var(--accent);
+}
+
+/* === GRID: 3 POR FILA === */
+.juegos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  justify-items: center;
+}
+
+.games-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 38px;
+    color: var(--accent);
+    margin-bottom: 40px;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    justify-items: center;
+}
+
+.card-container {
+    perspective: 900px;
+}
+
+.flip-card {
+    width: 310px;
+    height: 420px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 14px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 14px;
+    background: #1b1410;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text);
+}
+
+.card-style h3 {
+    color: var(--accent);
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.card-info {
+    color: var(--muted);
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.card-desc {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    padding: 0;
+    overflow: hidden;
+}
+
+.flip-card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
